@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>
+			github-commands
+		</title>
+		<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<script type="text/javascript" charset="utf-8" src="http://twitter.github.com/bootstrap/assets/js/jquery.js"></script>
+		<script type="text/javascript" charset="utf-8" src="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				window.prettyPrint && prettyPrint();
+			});
+		</script>
+	</head>
+	<body>
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></a> <a class="brand" href="./index.html">knalli</a>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li class="">
+								<a href="./index.html">Overview</a>
+							</li>
+							<li class="actice">
+								<a href="./github-commands.html">Github Commands</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" style="margin-top: 100px">
+			<div class="page-header">
+				<h1>
+					Github Commands
+				</h1>
+			</div>
+			<h2>Update with the upstream repository</h2>
+			<div class="row">
+				<div class="span8">
+					<p>Flavour by <a href="https://github.com/newmediamedicine/CollaboRhythm/wiki/Pulling-Upstream-Changes-from-the-Main-CollaboRhythm-Repository">sgilroy</a></p>
+					<h3>Bash only</h3>
+					<p>In the terminal, open the repository's directory<pre class="prettyprint linenums">cd /path/to/checkout</pre></p>
+					<p>Add the appropriate project's upstream<pre class="prettyprint linenums">git remote add upstream git://github.com/jenkins/jenkins.git</pre></p>
+					<p>Optional refresh the upstream's data with <pre class="prettyprint linenums">git fetch upstream</pre></p>
+					<h3>IDE</h3>
+					<h4>Eclipse</h4>
+					<p>Later.</p>
+					<h4>IntelliJ IDEA</h4>
+					<p>Click Version Control -&gt; Git -&gt; Pull Changes</p>
+					<p>For Remote, select <span class="label label-inverse">upstream</span> (default is <span class="label label-inverse">origin</span>)</p>
+					<p>Check the box next to <span class="label label-inverse">master</span>.</p>
+					<p>Click Pull.</p>
+					<div class="alert alert-info">
+						You should get all changes from the main repository. If there are any merge conflicts, you should be prompted to resolve them manually.
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
