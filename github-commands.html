@@ -45,16 +45,22 @@
 					<p>Flavour by <a href="https://github.com/newmediamedicine/CollaboRhythm/wiki/Pulling-Upstream-Changes-from-the-Main-CollaboRhythm-Repository">sgilroy</a></p>
 					<h3>Bash only</h3>
 					<p>In the terminal change to the repository's directory<pre class="prettyprint linenums">cd /path/to/checkout</pre></p>
-					<p>Add the appropriate project's upstream<pre class="prettyprint linenums">git remote add upstream git://github.com/jenkins/jenkins.git</pre></p>
+					<p>Add the appropriate project's upstream<pre class="prettyprint linenums">git remote add upstream git://github.com/jenkinsci/jenkins.git</pre></p>
 					<p>Optional refresh the upstream's data with <pre class="prettyprint linenums">git fetch upstream</pre></p>
 					<h3>IDE</h3>
 					<h4>Eclipse</h4>
 					<p>Later.</p>
 					<h4>IntelliJ IDEA</h4>
+					<p>Add the remote origin via shell.</p>
 					<p>Click Version Control -&gt; Git -&gt; Pull Changes</p>
 					<p>For Remote, select <span class="label label-inverse">upstream</span> (default is <span class="label label-inverse">origin</span>)</p>
 					<p>Check the box next to <span class="label label-inverse">master</span>.</p>
 					<p>Click Pull.</p>
+					<h4>SourceTree</h4>
+					<p>Click Repository -&gt; Repository Settings -&gt; Add.</p>
+					<p>Name and fill the upstream url, e.g. <code>upstream</code> and <code>git://github.com/jenkinsci/jenkins.git</code>.</p>
+					<p>In the sidebar on the left side, choose the remote <span class="label label-inverse">upstream</span> fetch it data. Alternatively, choose Fetch (all) in the menu.</p>
+					<p>Right click on the <span class="label label-inverse">master</span> (or other branch) of the remote <span class="label label-inverse">upstream</span> and choose <code>Pull upstream/master into master</code>.</p>
 					<div class="alert alert-info">
 						You should get all changes from the main repository. If there are any merge conflicts, you should be prompted to resolve them manually.
 					</div>
